@@ -218,7 +218,7 @@ img {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    background: linear-gradient(rgba(13, 28, 54, 0.72), rgba(13, 28, 54, 0.60)), url('../assets/Background.jpg');
+    background: linear-gradient(rgba(13, 28, 54, 0.72), rgba(13, 28, 54, 0.60)), url('../assets/alase_logo_full.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
