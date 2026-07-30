@@ -1,0 +1,207 @@
+<%- include('partials/head', { title, description, extraHead: '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">\n    <link rel="stylesheet" href="/css/director.css">' }) %>
+<body class="director-page">
+<%- include('partials/header', { activePage }) %>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="director-hero">
+            <div class="director-hero-container">
+                <div class="director-portrait-wrapper">
+                    <div class="director-portrait-frame">
+                        <img src="/assets/anthony_smith.jpg" alt="Dr. Anthony Smith, Ph.D. - Executive Director &amp; Psychologist">
+                        <div class="director-experience-badge">
+                            <i class="fas fa-award"></i>
+                            <span>25+ Years of Clinical Service</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="director-hero-content">
+                    <div class="badge-tag">
+                        <i class="fas fa-feather-alt"></i> Executive Leadership &amp; Founder
+                    </div>
+                    <h1>Anthony Smith, <span>Ph.D.</span></h1>
+                    <div class="director-hero-subtitle">
+                        <i class="fas fa-user-md"></i> Executive Director / Psychologist
+                    </div>
+                    <p class="director-hero-summary">
+                        Licensed Psychologist and Certified Health Services Provider in North Carolina. Dedicated to clinical excellence, community healing, trauma-informed care, and empowering individuals through culturally grounded and evidence-based psychological services.
+                    </p>
+
+                    <div class="director-highlights-row">
+                        <div class="highlight-pill">
+                            <i class="fas fa-university"></i> Former Duke Med Faculty
+                        </div>
+                        <div class="highlight-pill">
+                            <i class="fas fa-certificate"></i> NC Licensed Psychologist
+                        </div>
+                        <div class="highlight-pill">
+                            <i class="fas fa-users-cog"></i> ABPsi &amp; APA Leader
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#biography" class="btn-afro-gold">
+                            Read Executive Biography <i class="fas fa-arrow-down" style="margin-left: 8px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Afrocentric Pattern Bar -->
+        <div class="afro-pattern-bar"></div>
+
+        <!-- Wisdom / Cultural Proverb Banner -->
+        <section class="wisdom-banner">
+            <div class="wisdom-banner-content">
+                <blockquote>
+                    "He who conceals his disease cannot expect to be cured. True healing begins with understanding, community, and compassionate guidance."
+                </blockquote>
+                <cite>— African Wisdom &amp; Cultural Healing Philosophy</cite>
+            </div>
+        </section>
+
+        <!-- Executive Biography Section -->
+        <section id="biography" class="bio-section">
+            <div class="container">
+                <h2 class="director-section-title">Executive Biography</h2>
+                <p class="director-section-subtitle">Dedicated leadership uniting clinical expertise, academic rigor, and compassionate community service</p>
+
+                <div class="bio-card">
+                    <i class="fas fa-quote-right bio-quote-icon"></i>
+
+                    <p class="bio-paragraph">
+                        Anthony Smith, Ph.D., is the Executive Director &amp; Founder of Alase Center for Enrichment. Dr. Smith has been involved in the mental health field for over 25 years. He is a Licensed Psychologist and Certified Health Services Provider in North Carolina. He previously served on the faculty at the Duke University Medical School as a professor of Behavioral Science. He also has prior experience with the Duke Employee Assistance Program (EAP) providing a host of psychological services including short-term individual and couples therapy, crisis management, managed care gate-keeping including authorization of psychiatric hospitalization and case management, fitness for duty evaluations and psychological testing.
+                    </p>
+
+                    <p class="bio-paragraph">
+                        Dr. Smith has also worked in a Federal and State prison, a Veterans Affairs hospital and University Counseling Center. This broad training allows him to work effectively with a wide variety of mental health-related problems.
+                    </p>
+
+                    <p class="bio-paragraph">
+                        Dr. Smith received his Ph.D. and M.A. in Counseling Psychology from Southern Illinois University at Carbondale. He received his B.A. from the University of Notre Dame. He is involved in several professional organizations including the Association of Black Psychologists, American Psychological Association, and the North Carolina Psychological Association. He previously served on the board of the North Carolina Psychological Association for three years. He also previously served as president of the Triangle Chapter of the Association of Black Psychologists.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Areas of Expertise & Clinical Background Grid -->
+        <section class="expertise-section">
+            <div class="container">
+                <h2 class="director-section-title">Areas of Expertise &amp; Practice</h2>
+                <p class="director-section-subtitle">Comprehensive psychological services across academic, institutional, and clinical settings</p>
+
+                <div class="expertise-grid">
+                    <div class="expertise-card">
+                        <div class="expertise-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>Academic &amp; Research Leadership</h3>
+                        <p>Served on the faculty at Duke University Medical School as a professor of Behavioral Science, teaching and researching human behavior, mental health, and clinical intervention strategies.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                        <h3>Therapeutic &amp; Crisis Intervention</h3>
+                        <p>Extensive experience providing short-term individual therapy, couples counseling, crisis management, managed care gate-keeping, case management, and emergency psychiatric evaluation.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon"><i class="fas fa-notes-medical"></i></div>
+                        <h3>Evaluations &amp; Testing</h3>
+                        <p>Specialized expertise conducting comprehensive psychological testing and formal fitness-for-duty evaluations across complex institutional and organizational environments.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon"><i class="fas fa-landmark"></i></div>
+                        <h3>Correctional &amp; Re-Entry Care</h3>
+                        <p>Direct clinical service inside Federal and State prison systems, supporting justice-involved individuals, rehabilitation, re-entry transition, and specialized behavioral care.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon"><i class="fas fa-user-shield"></i></div>
+                        <h3>Veterans &amp; Student Mental Health</h3>
+                        <p>Clinical experience at Veterans Affairs (VA) hospitals and University Counseling Centers, addressing trauma, transition stressors, and diverse psychological conditions.</p>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-icon"><i class="fas fa-seedling"></i></div>
+                        <h3>Holistic &amp; Cultural Enrichment</h3>
+                        <p>Founder of Alase Center for Enrichment, advancing peer support, re-entry services, and community wellness through culturally attuned, dignified care.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Professional Leadership Section -->
+        <section class="credentials-section">
+            <div class="container">
+                <h2 class="director-section-title">Education &amp; Professional Leadership</h2>
+                <p class="director-section-subtitle">Academic foundations, licensure, and commitment to psychological associations</p>
+
+                <div class="credentials-container">
+                    <!-- Academic Education -->
+                    <div class="cred-box">
+                        <div class="cred-box-header">
+                            <i class="fas fa-university"></i>
+                            <h3>Academic Background</h3>
+                        </div>
+                        <ul class="cred-list">
+                            <li class="cred-item">
+                                <i class="fas fa-certificate cred-item-icon"></i>
+                                <div class="cred-item-text"><h4>Ph.D. in Counseling Psychology</h4><p>Southern Illinois University at Carbondale</p></div>
+                            </li>
+                            <li class="cred-item">
+                                <i class="fas fa-scroll cred-item-icon"></i>
+                                <div class="cred-item-text"><h4>M.A. in Counseling Psychology</h4><p>Southern Illinois University at Carbondale</p></div>
+                            </li>
+                            <li class="cred-item">
+                                <i class="fas fa-award cred-item-icon"></i>
+                                <div class="cred-item-text"><h4>B.A. (Bachelor of Arts)</h4><p>University of Notre Dame</p></div>
+                            </li>
+                            <li class="cred-item">
+                                <i class="fas fa-id-badge cred-item-icon"></i>
+                                <div class="cred-item-text"><h4>State Licensure &amp; Certification</h4><p>Licensed Psychologist &amp; Certified Health Services Provider (NC)</p></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Leadership & Organizations -->
+                    <div class="cred-box">
+                        <div class="cred-box-header">
+                            <i class="fas fa-users-cog"></i>
+                            <h3>Leadership &amp; Affiliations</h3>
+                        </div>
+                        <ul class="cred-list">
+                            <li class="cred-item">
+                                <i class="fas fa-star cred-item-icon"></i>
+                                <div class="cred-item-text"><h4>Association of Black Psychologists (ABPsi)</h4><p>Active Member; Former President of the Triangle Chapter of ABPsi</p></div>
+                            </li>
+                            <li class="cred-item">
+                                <i class="fas fa-check-circle cred-item-icon"></i>
+                                <div class="cred-item-text"><h4>North Carolina Psychological Association (NCPA)</h4><p>Active Member; Formerly served on the Board of Directors for 3 years</p></div>
+                            </li>
+                            <li class="cred-item">
+                                <i class="fas fa-user-friends cred-item-icon"></i>
+                                <div class="cred-item-text"><h4>American Psychological Association (APA)</h4><p>Active Member in professional psychological science and practice</p></div>
+                            </li>
+                            <li class="cred-item">
+                                <i class="fas fa-heart cred-item-icon"></i>
+                                <div class="cred-item-text"><h4>Community Enrichment Leader</h4><p>Founder &amp; Executive Director guiding Alase's mission of healing minds, hearts and souls</p></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="director-cta">
+            <div class="director-cta-content">
+                <h2>Connect with Alase Center for Enrichment</h2>
+                <p>Learn more about our peer mentoring, re-entry services, and psychological enrichment programs.</p>
+                <a href="https://www.jotform.com/form/252594932823162" class="btn-afro-gold" target="_blank" rel="noopener">
+                    Get Started / Request Services <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+<%- include('partials/footer') %>
+</body>
+</html>

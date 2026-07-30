@@ -1,0 +1,96 @@
+<%- include('partials/head', { title, description, extraHead: '<link rel="stylesheet" href="/css/staff.css">' }) %>
+<body>
+<%- include('partials/header', { activePage }) %>
+
+    <!-- Main Content (Staff Page preserved in comments below for future use) -->
+    <main class="staff-page">
+        <!-- Notice banner when viewing /staff directly -->
+        <section class="page-header" style="padding: 4rem 1rem; text-align: center;">
+            <div class="container">
+                <h1>Executive Leadership</h1>
+                <p>Please visit our Executive Director page to meet our founder and leadership.</p>
+                <a href="/director" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-block;">View Executive Director Profile</a>
+            </div>
+        </section>
+
+        <%#
+        ===================================================================
+        NOTE: Staff Page Content Below Has Been Commented Out For Future Use.
+        To restore full Staff Page, uncomment the sections below.
+        ===================================================================
+
+        <!-- Header Section -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Our Staff</h1>
+                <p>Meet the compassionate professionals dedicated to healing minds, hearts and souls</p>
+            </div>
+        </section>
+
+        <!-- Leadership Section -->
+        <section class="leadership-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Leadership Team</h2>
+                    <p>Guided by expertise, driven by compassion</p>
+                </div>
+
+                <div class="staff-featured">
+                    <div class="staff-featured-card">
+                        <div class="staff-featured-image">
+                            <img src="/assets/anthony_smith.jpg" alt="Anthony Smith, PhD - Executive Director and Psychologist at Alase Center for Enrichment" id="director-photo">
+                        </div>
+                        <div class="staff-featured-info">
+                            <div class="staff-featured-badge">
+                                <i class="fas fa-star"></i> Executive Leadership
+                            </div>
+                            <h2>Anthony Smith, PhD</h2>
+                            <p class="staff-featured-title">Executive Director / Psychologist</p>
+                            <div class="staff-divider"></div>
+                            <p class="staff-featured-bio">Dr. Anthony Smith is the Executive Director and licensed Psychologist at Alase Center for Enrichment. With extensive expertise in clinical psychology and community-based mental health services, Dr. Smith leads the organization's mission to heal minds, hearts, and souls across North Carolina.</p>
+                            <p class="staff-featured-bio">Dr. Smith's approach is grounded in trauma-informed care, evidence-based treatment, and a deep commitment to serving marginalized populations — including individuals navigating the criminal justice system, re-entry, and specialized treatment needs.</p>
+                            <p class="staff-featured-bio">Under Dr. Smith's guidance, Alase has developed specialized programs in re-entry support, peer mentoring, and sex offender treatment that adhere to the highest clinical and ethical standards.</p>
+                            <div class="staff-credentials">
+                                <div class="credential-item"><i class="fas fa-graduation-cap"></i><span>PhD in Psychology</span></div>
+                                <div class="credential-item"><i class="fas fa-certificate"></i><span>Licensed Psychologist</span></div>
+                                <div class="credential-item"><i class="fas fa-briefcase"></i><span>Executive Director</span></div>
+                                <div class="credential-item"><i class="fas fa-heart"></i><span>Trauma-Informed Care Specialist</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Values Section -->
+        <section class="staff-values-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Team's Core Values</h2>
+                    <p>Every member of the Alase team is guided by these principles</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card"><div class="value-icon"><i class="fas fa-hands-helping"></i></div><h3>Compassion</h3><p>We approach every individual with empathy and understanding, honoring their unique journey without judgment.</p></div>
+                    <div class="value-card"><div class="value-icon"><i class="fas fa-shield-alt"></i></div><h3>Integrity</h3><p>We uphold the highest ethical standards in all our interactions, maintaining trust and confidentiality.</p></div>
+                    <div class="value-card"><div class="value-icon"><i class="fas fa-lightbulb"></i></div><h3>Excellence</h3><p>We are committed to evidence-based practices and continuous professional development to deliver the best outcomes.</p></div>
+                    <div class="value-card"><div class="value-icon"><i class="fas fa-users"></i></div><h3>Community</h3><p>We build strong connections and believe that meaningful relationships are the foundation of lasting change.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Our Team CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Join Our Growing Team</h2>
+                    <p>Are you passionate about making a difference? We're always looking for compassionate professionals to join the Alase family.</p>
+                    <a href="/careers" class="btn btn-primary">View Open Positions</a>
+                </div>
+            </div>
+        </section>
+        %>
+    </main>
+
+<%- include('partials/footer') %>
+</body>
+</html>

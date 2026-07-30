@@ -1,0 +1,553 @@
+/* ==========================================================================
+   AFROCENTRIC THEME STYLESHEET - EXECUTIVE DIRECTOR PAGE (director.html)
+   Alase Center for Enrichment
+   ========================================================================== */
+
+:root {
+    /* Afrocentric Rich Palette */
+    --afro-gold: #D4AF37;
+    --afro-gold-light: #F4E4A2;
+    --afro-gold-dark: #A47F1D;
+    --afro-terracotta: #C85A32;
+    --afro-terracotta-dark: #9A3916;
+    --afro-mahogany: #1E1512;
+    --afro-mahogany-light: #2D201B;
+    --afro-ebony: #140D0B;
+    --afro-emerald: #1B4D3E;
+    --afro-parchment: #FAF5ED;
+    --afro-parchment-card: #FFFFFF;
+    --afro-text-dark: #2B211D;
+    --afro-text-muted: #5C4E47;
+    
+    /* Fonts */
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    
+    /* Pattern Data URIs */
+    --geo-pattern-dark: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d4af37' fill-opacity='0.08' fill-rule='evenodd'%3E%3Cpath d='M20 0l20 20-20 20L0 20zM20 5L5 20l15 15 15-15z'/%3E%3C/g%3E%3C/svg%3E");
+    --geo-pattern-light: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c85a32' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M20 0l20 20-20 20L0 20zM20 5L5 20l15 15 15-15z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Base Afrocentric Page Styles */
+.director-page {
+    background-color: var(--afro-parchment);
+    color: var(--afro-text-dark);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+}
+
+/* Pattern Divider Bars */
+.afro-pattern-bar {
+    height: 10px;
+    width: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        var(--afro-gold),
+        var(--afro-gold) 15px,
+        var(--afro-terracotta) 15px,
+        var(--afro-terracotta) 30px,
+        var(--afro-mahogany) 30px,
+        var(--afro-mahogany) 45px,
+        var(--afro-emerald) 45px,
+        var(--afro-emerald) 60px
+    );
+}
+
+/* Section Header */
+.director-section-title {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--afro-mahogany);
+    text-align: center;
+    position: relative;
+    margin-bottom: 0.75rem;
+}
+
+.director-section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--afro-gold), var(--afro-terracotta));
+    margin: 12px auto 0 auto;
+    border-radius: 2px;
+}
+
+.director-section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--afro-text-muted);
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+}
+
+/* HERO SECTION */
+.director-hero {
+    background-color: var(--afro-mahogany);
+    background-image: var(--geo-pattern-dark);
+    color: #FFFFFF;
+    padding: 140px 0 80px 0;
+    position: relative;
+}
+
+.director-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+/* Portrait Card Frame */
+.director-portrait-wrapper {
+    position: relative;
+}
+
+.director-portrait-frame {
+    position: relative;
+    border-radius: 20px;
+    padding: 12px;
+    background: linear-gradient(135deg, var(--afro-gold), var(--afro-terracotta));
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.director-portrait-frame img {
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    border: 3px solid var(--afro-mahogany);
+}
+
+.director-experience-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -15px;
+    background: linear-gradient(135deg, var(--afro-terracotta), var(--afro-mahogany));
+    color: #FFFFFF;
+    border: 2px solid var(--afro-gold);
+    padding: 12px 24px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.director-experience-badge i {
+    color: var(--afro-gold);
+    font-size: 1.3rem;
+}
+
+/* Hero Content */
+.director-hero-content .badge-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(212, 175, 55, 0.15);
+    color: var(--afro-gold);
+    border: 1px solid var(--afro-gold);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}
+
+.director-hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: 3.2rem;
+    line-height: 1.15;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+}
+
+.director-hero-content h1 span {
+    color: var(--afro-gold);
+}
+
+.director-hero-subtitle {
+    font-size: 1.35rem;
+    color: var(--afro-gold-light);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.director-hero-subtitle i {
+    color: var(--afro-terracotta);
+}
+
+.director-hero-summary {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.88);
+    margin-bottom: 2rem;
+}
+
+/* Highlight Pills */
+.director-highlights-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 2rem;
+}
+
+.highlight-pill {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.highlight-pill i {
+    color: var(--afro-gold);
+}
+
+/* WISDOM / PROVERB BANNER */
+.wisdom-banner {
+    background: linear-gradient(135deg, var(--afro-terracotta-dark), var(--afro-mahogany));
+    color: #FFFFFF;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 2px solid var(--afro-gold);
+    border-bottom: 2px solid var(--afro-gold);
+}
+
+.wisdom-banner-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.wisdom-banner blockquote {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--afro-gold-light);
+    margin-bottom: 10px;
+}
+
+.wisdom-banner cite {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* BIOGRAPHY SECTION */
+.bio-section {
+    padding: 90px 0;
+    background-color: var(--afro-parchment);
+    background-image: var(--geo-pattern-light);
+}
+
+.bio-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--afro-parchment-card);
+    border-radius: 20px;
+    padding: 3.5rem;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+    border-top: 5px solid var(--afro-gold);
+    border-left: 1px solid rgba(212, 175, 55, 0.2);
+    border-right: 1px solid rgba(212, 175, 55, 0.2);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    position: relative;
+}
+
+.bio-quote-icon {
+    font-size: 3rem;
+    color: rgba(200, 90, 50, 0.15);
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+}
+
+.bio-paragraph {
+    font-size: 1.15rem;
+    line-height: 1.85;
+    color: var(--afro-text-dark);
+    margin-bottom: 1.8rem;
+}
+
+.bio-paragraph:first-of-type::first-letter {
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    float: left;
+    line-height: 0.8;
+    padding-top: 4px;
+    padding-right: 12px;
+    padding-bottom: 4px;
+    color: var(--afro-terracotta);
+    font-weight: 700;
+}
+
+.bio-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+/* CAREER & EXPERTISE GRID */
+.expertise-section {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+}
+
+.expertise-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.expertise-card {
+    background-color: var(--afro-parchment);
+    border-radius: 16px;
+    padding: 2.2rem 1.8rem;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-left: 4px solid var(--afro-terracotta);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.expertise-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    border-left-color: var(--afro-gold);
+}
+
+.expertise-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--afro-mahogany), var(--afro-terracotta));
+    color: var(--afro-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    margin-bottom: 1.3rem;
+}
+
+.expertise-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--afro-mahogany);
+    margin-bottom: 0.8rem;
+}
+
+.expertise-card p {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    color: var(--afro-text-muted);
+}
+
+/* EDUCATION & LEADERSHIP SECTION */
+.credentials-section {
+    padding: 90px 0;
+    background-color: var(--afro-mahogany);
+    background-image: var(--geo-pattern-dark);
+    color: #FFFFFF;
+}
+
+.credentials-section .director-section-title {
+    color: #FFFFFF;
+}
+
+.credentials-section .director-section-subtitle {
+    color: var(--afro-gold-light);
+}
+
+.credentials-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.cred-box {
+    background-color: var(--afro-mahogany-light);
+    border-radius: 18px;
+    padding: 2.5rem;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.cred-box-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(212, 175, 55, 0.2);
+}
+
+.cred-box-header i {
+    font-size: 2rem;
+    color: var(--afro-gold);
+}
+
+.cred-box-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.cred-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cred-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 1.4rem;
+}
+
+.cred-item:last-child {
+    margin-bottom: 0;
+}
+
+.cred-item-icon {
+    color: var(--afro-terracotta);
+    font-size: 1.1rem;
+    margin-top: 4px;
+}
+
+.cred-item-text h4 {
+    font-size: 1.1rem;
+    color: var(--afro-gold-light);
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.cred-item-text p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+}
+
+/* CTA & CONTACT SECTION */
+.director-cta {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--afro-terracotta), var(--afro-mahogany));
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.director-cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.director-cta h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+}
+
+.director-cta p {
+    font-size: 1.15rem;
+    margin-bottom: 2.2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-afro-gold {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--afro-gold), var(--afro-gold-dark));
+    color: var(--afro-mahogany);
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 16px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+}
+
+.btn-afro-gold:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+    background: linear-gradient(135deg, #E5BE48, var(--afro-gold));
+    color: #000000;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    .director-hero-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .director-portrait-frame {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .director-hero-content {
+        text-align: center;
+    }
+
+    .director-hero-subtitle {
+        justify-content: center;
+    }
+
+    .director-highlights-row {
+        justify-content: center;
+    }
+
+    .credentials-container {
+        grid-template-columns: 1fr;
+    }
+
+    .bio-card {
+        padding: 2.2rem 1.8rem;
+    }
+
+    .bio-paragraph:first-of-type::first-letter {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .director-hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .director-hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .director-section-title {
+        font-size: 1.8rem;
+    }
+
+    .cred-box {
+        padding: 1.6rem;
+    }
+}

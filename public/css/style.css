@@ -207,6 +207,11 @@ img {
     transform: translateY(-2px);
 }
 
+/* Active page highlight */
+.nav-link.active {
+    color: var(--primary-gold);
+}
+
 /* ===== DROPDOWN MENUS ===== */
 .nav-dropdown {
     position: relative;

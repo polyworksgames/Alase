@@ -1,0 +1,53 @@
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="/">
+                <img src="/assets/logo.png" alt="Alase Center for Enrichment" class="logo">
+            </a>
+            <span class="logo-text">Alase Center for Enrichment</span>
+        </div>
+        <ul class="nav-menu">
+            <li>
+                <a href="/" class="nav-link <%= activePage === 'home' ? 'active' : '' %>">Home</a>
+            </li>
+
+            <li class="nav-dropdown">
+                <a class="nav-link <%= activePage === 'about' ? 'active' : '' %>">
+                    About <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/#about" class="dropdown-item">About Alase</a></li>
+                    <li><a href="/director" class="dropdown-item">Executive Director</a></li>
+                    <li><a href="/careers" class="dropdown-item">Careers</a></li>
+                    <!-- <li><a href="/staff" class="dropdown-item">Staff</a></li> -->
+                </ul>
+            </li>
+
+            <li class="nav-dropdown">
+                <a class="nav-link <%= activePage === 'services' ? 'active' : '' %>">
+                    Services <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/#services" class="dropdown-item">All Services</a></li>
+                    <li><a href="/reentry" class="dropdown-item">Re-Entry Services</a></li>
+                    <li><a href="/sexoffender" class="dropdown-item">Sex Offender Services</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="/resources" class="nav-link <%= activePage === 'resources' ? 'active' : '' %>">Resources</a>
+            </li>
+
+            <li>
+                <a href="/#contact" class="nav-link cta-button">Get Started</a>
+            </li>
+        </ul>
+
+        <div class="hamburger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>

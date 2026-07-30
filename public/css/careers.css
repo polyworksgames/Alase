@@ -1,0 +1,370 @@
+/* ===== CAREERS PAGE STYLES ===== */
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, var(--deep-blue) 0%, var(--light-blue) 100%);
+    color: var(--white);
+    padding: 140px 0 80px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.page-header p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Why Work Section */
+.why-work-section {
+    padding: 80px 0;
+    background-color: var(--off-white);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.benefit-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    border: 1px solid var(--gray-200);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.benefit-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary-gold), #F4D03F);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.benefit-icon i {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.benefit-card h3 {
+    font-size: 1.4rem;
+    color: var(--deep-blue);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.benefit-card p {
+    color: var(--gray-600);
+    line-height: 1.6;
+}
+
+/* Positions Section */
+.positions-section {
+    padding: 80px 0;
+}
+
+.positions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.position-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-200);
+    transition: var(--transition);
+}
+
+.position-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.position-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.position-header h3 {
+    font-size: 1.5rem;
+    color: var(--deep-blue);
+    font-weight: 600;
+    margin: 0;
+}
+
+.position-type {
+    background-color: var(--primary-gold);
+    color: var(--white);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.position-location {
+    color: var(--gray-600);
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.position-location i {
+    margin-right: 5px;
+    color: var(--primary-gold);
+}
+
+.position-description {
+    color: var(--gray-700);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.position-requirements {
+    margin: 0;
+    padding-left: 0;
+}
+
+.position-requirements li {
+    color: var(--gray-600);
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 0.95rem;
+}
+
+.position-requirements li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--primary-gold);
+    font-weight: bold;
+}
+
+/* Application Section */
+.application-section {
+    padding: 80px 0;
+    background-color: var(--off-white);
+}
+
+.application-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.application-header h2 {
+    font-size: 2.5rem;
+    color: var(--deep-blue);
+    margin-bottom: 20px;
+}
+
+.application-header p {
+    font-size: 1.125rem;
+    color: var(--gray-600);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.form-instructions {
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-200);
+}
+
+.form-instructions h3 {
+    font-size: 1.3rem;
+    color: var(--deep-blue);
+    margin-bottom: 20px;
+}
+
+.form-instructions ul {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.form-instructions li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--gray-700);
+}
+
+.form-instructions i {
+    color: var(--primary-gold);
+    margin-top: 2px;
+}
+
+.form-instructions p {
+    color: var(--deep-blue);
+    font-weight: 500;
+    margin: 0;
+}
+
+.jotform-wrapper {
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    padding: 20px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--gray-200);
+    min-height: 600px;
+}
+
+/* JotForm Responsive Overrides */
+.jotform-wrapper iframe {
+    width: 100% !important;
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+/* Equal Opportunity Section */
+.equal-opportunity {
+    background-color: var(--deep-blue);
+    color: var(--white);
+    padding: 60px 0;
+}
+
+.eo-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.eo-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-gold);
+}
+
+.eo-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Navigation Active State */
+.nav-link.active {
+    color: var(--primary-gold);
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .form-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .form-instructions {
+        order: 2;
+    }
+    
+    .jotform-wrapper {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .position-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .position-card {
+        padding: 30px 20px;
+    }
+    
+    .application-header h2 {
+        font-size: 2rem;
+    }
+    
+    .form-instructions,
+    .jotform-wrapper {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        padding: 120px 0 60px;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .why-work-section,
+    .positions-section,
+    .application-section {
+        padding: 60px 0;
+    }
+    
+    .benefit-card,
+    .position-card {
+        padding: 25px 20px;
+    }
+    
+    .form-instructions h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Animation for form loading */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.jotform-wrapper {
+    animation: fadeIn 0.6s ease-out;
+}
